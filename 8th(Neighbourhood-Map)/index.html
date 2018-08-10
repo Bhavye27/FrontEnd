@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Neighbourhood Map</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <meta name="viewport" content="initial-scale=1.0">
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <h1>GOA</h1>
+         <form>
+            <input type="text" placeholder="Search...." name="search"  data-bind="value: inputText, valueUpdate: 'afterkeydown', event: {keyup: filtersearch}">
+         </form>
+         <ol class="olist" data-bind="foreach:marker">
+            <li class="list" data-bind="visible:show, event:{click:$parent.everything}">
+               <a data-bind="text:title"></a>
+            </li>
+         </ol>
+      </div>
+      <div id="map"></div>
+      <script src="js/map.js"></script>
+      <script src="js/knockout.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="js/app.js"></script>
+      <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDMMfMhxsQe1x8joKDw3bPQvehQtmoLkFI&callback=initMap" onerror="maperror()"
+         ></script>
+   </body>
+</html>

@@ -1,0 +1,38 @@
+.image_logo {
+  padding-top: 15px;
+  }
+
+  .logo {
+    margin-top: 20px;
+    width: 7vw;
+    height: auto;
+  }
+
+.container {
+  font-family: "Barrio";
+}
+
+.head1 {
+  margin-top: 25px;
+  padding-right: 30px;
+}
+
+.specs {
+  font-size: 25px;
+  padding: 10px;
+
+}
+
+.coverpic {
+  width: 95%;
+  border: 8px solid;
+  border-radius: 20px;
+}
+
+.image {
+  width: 75%;
+  border: 8px solid;
+  border-radius: 20px;
+}
+
+
